@@ -1,0 +1,76 @@
+<!DOCTYPE html><!--INDICAMOS QUE LA PAGINA ES HTML5 Y TODOS LOS NAVEGADORES SABRAN QUE ES HTML-->
+<html lang="en"><!--lang es para que el navegador interprete que el idioma es espaniol-->
+<head><!--Parte de la configuracion de todos los metadatos de la pagina web-->
+    <meta charset="UTF-8"><!--ESTO NOS PERMITE UTILIZAR TODOS LOS CARACTERES PARA QUE EL NAVEGADOR LOS INTERPRETE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ESTA PARTE ES IMPORTANTE INVESTIGARLO POR LA PARTE DEL RESPONSIVE Y PARA QUE SE ADAPTE BIEN A CUALQUIER DISPOSITIVO-->
+    <title>Mi primer pagina web</title><!--ESTE ES TITULO QUE SALE EN LA PESTANIA DE LA PAGINA-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"><!--Esta nos permite vincular la carpeta css con el html-->
+</head>
+
+<body>
+    <header><!---->
+        <h1>Verinaria Turrialba</h1>
+        <nav>
+            <ul>
+                <li><!--li lo usamos para colocar las opciones que van a estar en el nav-->
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="inicioSesion.html">Inicio de Sesion</a>
+                </li>
+                <li>
+                    <a href="animacion.html">Animacion</a>
+                </li>
+            </ul>
+        </nav><!--Nos permite navegar entre otras paginas web, nav es como la barra donde van a estar las opciones para navegar, nav es como el JMenuBar en Java -->
+    </header>
+
+    <main>
+        <div class="contenido">
+           <div class="formulario">
+                <h2>Iniciar Sesion</h2>
+                <form id="formulario" method="post">
+                    <div class="usuarios">
+                        <label>Correo:</label>
+                        <input id="correo" type="email" required><!--El id lo vamos a utilizar para JavaScript y poder identificarlo, required obliga a completar si o si el campo de texto-->
+                    </div>
+
+                    <div class="usuarios">
+                        <label>Contraseña:</label>
+                        <input id="contrasenna" type="password" required>
+                    </div>
+                    <div class="usuarios">
+                        <label>Nombre:</label>
+                        <input id="nombre" type="text" required><!--El id lo vamos a utilizar para JavaScript y poder identificarlo, required obliga a completar si o si el campo de texto-->
+                    </div>
+
+                    <div class="usuarios">
+                        <label>Edad:</label>
+                        <input id="edad" type="number" required>
+                    </div>
+                    <div class="usuarios">
+                        <label>Fecha de Nacimiento:</label>
+                        <input id="fechaNacimiento" type="date" required>
+                    </div>
+                    <div class="usuarios">
+                        <label>Genero:</label>
+                        <select name="genero" id="genero">
+                            <option value="mujer">mujer</option>
+                            <option value="hombre">hombre</option>
+                        </select>
+                    </div>
+
+                    <input id="botonIngresar" type="submit" value="Ingresar">
+                </form>
+           </div>
+        </div>
+    </main>
+</body>
+<footer><!--PARTE DONDE VA A ESTAR INFORMACION RELATIVA EN NUESTRO PIE DE PAGINA-->
+    <p>Siguenos en nuestras redes sociales</p>
+    <div>
+        <a href="">Facebook</a>
+    </div>
+    <p>Derechos de autor 2024</p>
+</footer>
+</html>
